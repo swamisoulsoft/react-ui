@@ -1,0 +1,38 @@
+.Navbar {
+  height: 3.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top:0;
+  z-index: 1010;
+}
+.Navbar .Navbar_middle .Logo {
+  font-weight: 500;
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+.SecondaryNavbar {
+  background: var(--primary-gradient-blue);
+  color:#fff;
+  position: sticky;
+  top:3.5rem;
+  z-index: 1010;
+}
+.SecondaryNavbar_innerbox {
+  display: flex;
+  justify-content: space-between;
+  padding:5px 27px;
+}
+.SecondaryNavbar_right{
+  display: flex;
+  align-items: center;
+  gap:15px;
+
+}
+.SecondaryNavbar_icons{
+  font-size: 2rem;
+  cursor: pointer;
+}

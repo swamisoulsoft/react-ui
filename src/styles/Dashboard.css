@@ -1,0 +1,105 @@
+.Dashboard_header {
+  color: var(--primary-black);
+  height: 4rem;
+}
+.Dashboard {
+  font-size: 20px;
+  padding: 4rem;
+  /* font-family: "Roboto"; */
+}
+
+.Dashboard_content_box {
+  display: flex;
+  gap: 20px;
+}
+.Dashboard_content_box_left {
+  flex: 0.2;
+}
+.Dashboard_Badge_grp {
+  font-size: 16px;
+}
+.Dashboard_content_box_right {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: fit-content;
+  flex: 0.8;
+  padding: 2rem;
+}
+.Dashboard_content_box_right_header {
+  margin-bottom: 2rem;
+  color: #00b4db;
+}
+.Dashboard_Badge {
+  gap: 15px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.innerFlex {
+  /* color: #000; */
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 500;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.innerFlex .Badge_header{
+  color: var(--primary-black);
+  font-weight: 500;
+}
+.innerFlex .Badge_price {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+.Dashboard_Badge_grp {
+  color: #fff;
+}
+.Dashboard_content_box_left .red {
+  background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+}
+.Dashboard_content_box_left .green {
+  background-image: linear-gradient(135deg, #81fbb8 10%, #28c76f 100%);
+}
+.Dashboard_content_box_left .blue {
+  background-image: linear-gradient(135deg, #e2b0ff 10%, #9f44d3 100%);
+}
+
+/* .Dashboard_second_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.Dashboard_second_row_title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.Dashboard_second_row_left {
+  flex: 0.8;
+}
+.Dashboard_second_row_right {
+  flex: 0.4;
+  width: 100%;
+}
+.Dashboard_second_row_right_inner {
+  border-radius: 10px;
+  background: #fff;
+  color: #00b4db;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+} */
+
+@media (max-width: 768px) {
+  .Dashboard {
+    font-size: 1rem;
+  }
+  .Dashboard_content_box{
+    flex-direction: column;
+  }
+  .innerFlex {
+    width: 100%;
+    flex: 1;
+  }
+  
+}

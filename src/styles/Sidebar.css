@@ -1,0 +1,116 @@
+.Sidebar {
+  color: #848484;
+  background-color: #fff;
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+  min-height: 100%;
+  width: 230px;
+  z-index: 810;
+  position: fixed;
+  top: 6.75rem;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+.Sidebar > p {
+  padding: 15px 5px 15px 15px;
+  margin-bottom: 0;
+  display: none;
+}
+.SidebarRow {
+  padding: 15px 5px 0px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.SidebarRow:hover {
+  cursor: pointer;
+  color: var(--primary-blue);
+}
+.arrow_icon {
+  position: absolute;
+  right: 0;
+  padding-right: 23px;
+}
+.arrow_icon > .transition {
+  -webkit-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+.menu_open {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.SubItem.open{
+  overflow: visible;
+  height: auto;
+  display: block;
+  transition: height 0.5s ease-in-out 0.5s;
+  -webkit-transition: height 0.5s ease-in-out 0.5s;
+  -o-transition: height 0.5s ease-in-out 0.5s;
+  will-change: height;
+ 
+}
+.SubItem.close{
+  overflow: hidden;
+  height: 0px;
+  will-change: height;
+  display: none;
+  transition: height 0.5s ease-in-out 0.5s;
+  -webkit-transition: height 0.5s ease-in-out 0.5s;
+  -o-transition: height 0.5s ease-in-out 0.5s;
+}
+.SubItem >  li {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 3px;
+  list-style: none;
+  cursor: pointer;
+}
+.SubItem > li:hover {
+  color: #000;
+}
+#Sidebar_subitem_icon {
+  font-size: 13px;
+}
+
+/* .Close_subitem {
+  overflow: hidden;
+  height: 0px;
+  will-change: height;
+  display: none;
+} */
+/* .SidebarRow:hover {
+    background-color: #f62d51;
+    color: #fff;
+  } */
+/* .Sidebar_collapse {
+    width: 60px;
+    z-index: 850;
+    .Sidebar_collapse > p {
+      content: none;
+    }
+    .SidebarRow {
+      padding: 10px;
+    }
+    .SidebarRow > span {
+      display: none;
+    }
+    .arrow_icon {
+      display: none;
+    }
+    .SubItem {
+      display: none;
+    }
+  } */
+
+.Sidebar_collapse {
+  width: 0;
+}

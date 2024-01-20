@@ -1,38 +1,85 @@
+:root {
+  --primary-blue: #00b4db;
+  --primary-black: #001c44;
+  --primary-light-black: #626262;
+  --primary-gradient-blue: linear-gradient(to right, #0083b0, #00b4db);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f0f2f3;
+  background-color: #fff;
+  /* background-color: rgb(223 241 255); */
+  font-family: "Poppins", sans-serif;
+  
+}
+.customized_btn {
+  margin-right: 10px;
+  background: transparent;
+  color: #fff;
+  outline: #fff;
+  border: 1px solid #fff;
+}
+.customized_btn:hover {
+  background-color: #fff;
+  color:  #00b4db;
+}
+.form-label {
+  color: #6c757d;
+  font-size: 15px;
+  font-weight: 600;
+}
+.form-control,
+.form-select {
+  background-color: transparent;
+  margin-bottom:10px;
+}
+table {
+  width: 100%;
+  overflow: auto;
+}
+tr{
+  border: 1px solid #e0e2e7;
+}
+th,
+td {
+  color: var(--primary-light-black);
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #e0e2e7;
+  border-collapse: collapse;
+}
+td{
+  font-size: 14px;
+  margin: 0.5rem;
+}
+th {
+  text-align: left;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+thead {
+  th {
+    background-color: #f0f1f3;
+    color: #212529;
   }
-  to {
-    transform: rotate(360deg);
+}
+hr{
+  background: #eee;
+    margin: 1rem auto;
+    width: 50%;
+    opacity: 0.09;
+}
+
+option{
+  color:#000;
+}
+@media (max-width: 768px) {
+  .App{
+    width: 132vw;
+  }
+  .btn {
+    font-size: 1rem;
   }
 }

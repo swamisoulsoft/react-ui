@@ -1,0 +1,35 @@
+.form_box {
+  padding: 1rem;
+}
+.form_box_header {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  border-radius: 7px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.form_box_content {
+  border-top:3px solid var(--primary-blue);
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.flex-1 {
+  flex: 1;
+}
+#Paid_amount,
+#Bal_amount {
+  color: var(--primary-blue);
+}
+
+@media (max-width: 1024px) {
+  .form_box_inner {
+    flex-direction: column;
+  }
+  .form_box_content {
+    overflow: auto;
+  }
+}

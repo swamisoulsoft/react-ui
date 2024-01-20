@@ -1,0 +1,72 @@
+/* Add your styling for the modals here */
+
+.ModalBox {
+    margin: 20px;
+  }
+  
+  .ModalBox_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #007bff; /* Blue color for the title */
+  }
+  
+  
+  .FormLabel {
+    font-weight: bold;
+    color: #333; /* Dark text color for labels */
+  }
+  
+  .FormControl {
+    margin-bottom: 15px;
+  }
+  
+  /* Styles for radio buttons */
+  .FormGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .RadioLabel {
+    margin-left: 5px;
+    color: #333; /* Dark text color for radio labels */
+  }
+  
+  /* Additional styling for buttons within the modal */
+  .ModalFooter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .CancelButton,
+  .SaveButton {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .CancelButton {
+    background-color: #ccc;
+    color: #333; /* Dark text color for button text */
+  }
+  
+  .SaveButton {
+    background-color: #007bff;
+    color: #fff; /* White text color for button text */
+  }
+  
+  .CancelButton:hover,
+  .SaveButton:hover {
+    background-color: #bbb;
+  }
+  
+  /* Placeholder styles for icons (replace with your actual icon styles) */
+  .Icon {
+    margin-right: 5px;
+    color: #007bff; /* Blue color for icons */
+  }
+  
